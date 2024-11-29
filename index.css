@@ -1,0 +1,126 @@
+.bgmembers{
+    background: linear-gradient(to bottom right, white, rgba(255, 255, 255, 0.5)), url(pict/bgmembers.webp) no-repeat, white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bgawards{
+    background: linear-gradient(to bottom right, white, rgba(255, 255, 255, 0.5)), url(pict/bgawards.png) no-repeat, white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.aos{
+    animation: appear 10s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.largeaos{
+    animation: appear 15s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+img{
+    object-fit: cover;
+}
+
+body a{
+    text-decoration: none;
+}
+
+body a:hover{
+    text-decoration: underline;
+}
+
+#carouselExampleCaptions{
+    height: 500px;
+    text-shadow: 2px 2px 2px black;
+}
+
+#carouselExampleCaptions a{
+    color: white;
+}
+
+#carouselExampleCaptions img {
+    height: 500px;
+    object-fit: cover; 
+}
+
+#about{
+    text-align: justify;
+}
+
+#about, #members, #albums, #awards{
+    margin: 80px 120px;
+}
+
+#albums p{
+    margin: 0;
+}
+
+#albums .title a{
+    font-weight: bold;
+    color: black;
+}
+
+#albums a{
+    color: black;
+}
+
+table{
+    width: 90%;
+    margin: auto;
+}
+
+table, table td, table th{
+    border: 1px solid black;
+    padding: 8px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td{
+    text-shadow: 2px 2px 2px white;
+}
+
+table th{
+    font-weight: bold;
+}
+
+table thead th{
+    background-color: grey;
+}
+
+table tbody th{
+    background-color: darkgrey;
+}
+
+form{
+    width: 40%;
+    margin: auto;
+}
+
+form .required{
+    color: red;
+}
+
+form input, form textarea{
+    box-shadow: 0px 0px 3px black;
+}
+
+footer p{
+    margin: 0;
+}
